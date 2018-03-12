@@ -1,0 +1,58 @@
+.footer {
+	background-color: #171717;
+	padding: 30px 0 0px;
+}
+.footer-flex {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	
+}
+.footer-item {
+	&:not(:last-child) {
+		margin-right: 65px;
+	}
+}
+.logo-foot {
+}
+.nav-head {
+	color: #ffffff;
+	font-family: $font2;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -0.32px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+.nav {
+	li {
+		color: #ffffff;
+		font-family: $font2;
+		font-size: 15px;
+		font-weight: 400;
+		margin: 3px 0;
+	}
+	a {
+		text-decoration: none;
+		color: #ffffff;
+		&:hover {
+			color: #bbfa60;
+		}
+	}
+}
+
+
+.copy-wrap {
+	margin-top: 60px;
+	background-color: #343333;
+	padding: 13px 0;
+}
+.copy {
+	color: #ffffff;
+	font-family: $font2;
+	font-size: 14px;
+	font-weight: 400;
+
+	letter-spacing: -0.28px;
+}

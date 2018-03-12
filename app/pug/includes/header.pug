@@ -1,0 +1,50 @@
+// begin header
+.wrap-top-line
+	.container
+		.top-line
+			ul.social-link
+				li
+					a(href="#"): i.icon-inst
+				li
+					a(href="#"): i.icon-fb
+				li
+					a(href="#"): i.icon-vk
+			ul.main-nav
+				li
+					a(href="#ch1") Развлечения
+				li
+					a(href="#ch2") Услуги
+				li
+					a(href="#ch3") Мероприятия
+				li
+					a(href="#ch4") Цены
+				li
+					a(href="#ch5") Фудкорт
+				li
+					a(href="#ch6") Контакты
+header.header
+	.wrap-header-top
+		.container
+			.header-top
+				.logo-wrap
+					a.logo(href="#")
+						img(src="../img/logo.png", alt="")
+				+b.header-top-right
+					+e.item <i class="header-top_1"></i> <span>Москва, <br>ул. Исаковского, д. 12 </span>
+					+e.item <i class="header-top_2"></i> <span>Пн - Пт 11:00 - 19:00 <br>Сб - Вс 10:00 - 23:00 </span>
+					+e.item
+						<i class="header-top_3"></i>
+						+phone('8 (495) 784 76 77')
+	.header-btm
+		.container
+			.wrap-bg
+				i.icon-tr1
+				i.icon-tr2
+				.main-logo
+					img(src="../img/main-logo.png", alt="")
+				.top-title батутный парк
+				i.icon-logotxt
+				.bottom-title батутно. скололазно. молодежно.
+				.btn-wrap
+					+fancybox('buy', 'КУПИТЬ БИЛЕТ')
+// end header
