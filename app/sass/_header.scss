@@ -1,6 +1,34 @@
 @import "_hamburgers.scss";
 
 
+.hamburger {
+	display: none;
+	position: fixed;
+	top: 60px;
+	left: 20px;
+	z-index: 101;
+	@include breakpoint("maxsmall") {
+		display: block;
+	}
+	&>span {
+		display: block;
+	}
+}
+
+.logo-sm {
+	display: none;
+	margin-top: 18px;
+	margin-left: 55px;
+	@include breakpoint("maxsmall") {
+	      display: block;
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .wrap-top-line {
 	background-color: #000;
 	position: fixed;
@@ -8,6 +36,14 @@
 	left: 0;
 	right: 0;
 	z-index: 100;
+	@include breakpoint("maxsmall") {
+		top: 106px;
+		transform: translate(-100%, 0%);
+		transition: transform .3s ease;
+		&_active {
+			transform: translate(0, 0);
+		}
+	}
 }
 
 .top-line {
@@ -16,13 +52,16 @@
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
+	@include breakpoint("maxsmall") {
+		padding: 0;
+	}
 }
 .social-link {
 	display: flex;
 	align-items: stretch;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
 
 	li {
 		// display: inline-block;
@@ -47,12 +86,24 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 64%;
-		 // @include breakpoint("large") {
-		 //       width: 64%;
-		 // }
-		 
-		 li {
-		// display: inline-block;
+	@include breakpoint("maxmedium") {
+		width: 70%;
+	}
+	@include breakpoint("maxsmall") {
+		width: 100%;
+		display: block;
+		padding-top: 40px;
+		padding-bottom: 50px;
+		padding-left: 25px;
+	}
+
+
+	li {
+		@include breakpoint("maxsmall") {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
 	}
 	a {
 		text-decoration: none;
@@ -62,18 +113,51 @@
 		font-weight: 400;
 
 		letter-spacing: -0.96px;
+		&:hover {
+			color: #bafa5e;
+		}
+
+		@include breakpoint("maxsmall") {
+			font-size: 24px;
+			letter-spacing: -0.96px;
+		}
 	}
 }
 .header {
 	margin-top: 40px;
+	@include breakpoint("maxsmall") {
+		margin-top: 0;
+	}
+	.social-link {
+		@include breakpoint("maxsmall") {
+		      display: none;
+		}
+	}
 	.icon-tr2 {
 		position: absolute;
 		bottom: -120px;
 		left: -40px;
+		@include breakpoint("maxsmall") {
+		      left: auto;
+		      right: 60px;
+		      bottom: -150px;
+		}
 	}
+	.icon-tr1 {
+		position: absolute;
+		right: -50px;
+		top: -75px;
+		@include breakpoint("maxsmall") {
+			display: none;
+		}
+	}
+
 }
 .wrap-header-top {
 	background-color: #6fb8ed;
+	@include breakpoint("maxsmall") {
+		display: none;
+	}
 }
 
 .header-top {
@@ -87,6 +171,10 @@
 	padding: 11px 0 12px;
 }
 .logo {
+	display: inline-block;
+	@include breakpoint("maxmedium") {
+		max-width: 200px;
+	}
 }
 .header-top-right {
 	display: flex;
@@ -94,6 +182,9 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 64%;
+	@include breakpoint("maxmedium") {
+		width: 70%;
+	}
 
 	&__item {
 		position: relative;
@@ -110,10 +201,17 @@
 		font-weight: 400;
 		line-height: 21px;
 		letter-spacing: -0.32px;
+		@include breakpoint("maxmedium") {
+			font-size: 14px;
+			line-height: 1.3;
+		}
 		a {
 			text-decoration: none;
 			color: #ffffff;
 			font-size: 19px;
+			@include breakpoint("maxmedium") {
+				font-size: 17px;
+			}
 		}
 
 		i {
@@ -138,12 +236,30 @@
 	.container {
 		padding-bottom: 90px;
 		position: relative;	
+		@include breakpoint("maxlarge") {
+			padding-bottom: 60px;
+		}
+		@include breakpoint("maxsmall") {
+		      padding-left: 10px;
+		      padding-right: 10px;
+		      padding-bottom: 130px;
+		}
 	}
 }
 .wrap-bg {
 	display: inline-block;
 	position: relative;
 	margin-top: 190px;
+	@include breakpoint("maxlarge") {
+		margin-top: 140px;
+	}
+	@include breakpoint("maxmedium") {
+		margin-top: 100px;
+	}
+	@include breakpoint("maxsmall") {
+	      margin-top: 90px;
+	      display: block;
+	}
 	&:before {
 		content: '';
 		display: block;
@@ -155,19 +271,30 @@
 		background-color: #000000;
 		opacity: 0.57;
 		z-index: 0;
+		@include breakpoint("maxsmall") {
+			display: none;
+		}
 	}
 	&>* {
 		position: relative;
 	}
 }
-.icon-tr1 {
-	position: absolute;
-	right: -50px;
-	top: -75px;
-}
+
 
 .main-logo {
 	margin-top: -68px;
+	@include breakpoint("maxmedium") {
+		margin-top: -50px;
+	}
+	@include breakpoint("maxsmall") {
+	      display: none;
+	      margin-top: 0;
+	}
+	img {
+		@include breakpoint("maxmedium") {
+			max-width: 120px;
+		}
+	}
 }
 .top-title {
 	color: #ffffff;
@@ -177,12 +304,24 @@
 	text-align: left;
 	letter-spacing: -0.69px;
 	margin-bottom: 15px;
-	    margin-top: 34px;
+	margin-top: 34px;
+	@include breakpoint("maxmedium") {
+		margin-top: 20px;
+		font-size: 45px;
+	}
+	@include breakpoint("maxsmall") {
+		margin-top: 0;
+	      font-size: 33px;
+letter-spacing: -0.69px;
+	}
 }
 .icon-logotxt {
 	display: block;
 	position: relative;
 	left: 5px;
+	@include breakpoint("maxsmall") {
+	      left: 0;
+	}
 }
 .bottom-title {
 	color: #ffffff;
@@ -193,12 +332,31 @@
 
 	letter-spacing: -3.8px;
 	margin-top: 30px;
+	@include breakpoint("maxmedium") {
+		margin-top: 5px;
+		font-size: 35px;
+	}
+	@include breakpoint("maxsmall") {
+	      font-size: 30px;
+letter-spacing: -3.8px;
+	}
 }
 .btn-wrap {
 	background: url(../img/bg-btn.png) center top no-repeat;
 	background-size: contain;
 	padding: 50px 0;
-	    margin-top: 52px;
+	margin-top: 52px;
+	@include breakpoint("maxlarge") {
+		margin-top: 30px;
+	}
+	@include breakpoint("maxmedium") {
+		padding: 30px 0;
+		margin-top: 10px;
+	}
+	@include breakpoint("maxsmall") {
+	      padding: 46px 0;
+	      margin-top: 60px;
+	}
 }
 
 .button {
@@ -217,9 +375,28 @@
 
 	padding: 18px 42px;
 	box-shadow: 0 3px 0 0 #83b934;
+	transition: background-color .2s ease;
 	&_sm {
 		font-size: 16px;
 		padding: 15px 27px;
+	}
+	&:hover {
+		background-color: #6fb8ed;
+		color: #fff;
+		box-shadow: 0 3px 0 0 #427ca6;
+	}
+	&:active {
+		transition: none;
+		transform: translate(0, 3px);
+		box-shadow: none;
+	}
+	@include breakpoint("maxmedium") {
+		font-size: 17px;
+		padding: 14px 25px;
+	}
+	@include breakpoint("maxsmall") {
+	      font-size: 18px;
+	      padding: 17px 42px;
 	}
 }
 
@@ -238,6 +415,9 @@
 	@include breakpoint("large") {
 		right: 41px;
 	}
+	@include breakpoint("maxsmall") {
+	      display: none;
+	}
 }
 .link-box {
 	width: 61px;
@@ -248,6 +428,10 @@
 	clear: both;
 	transition: width .2s ease;
 	overflow: hidden;
+	@include breakpoint("maxmedium") {
+		width: 40px;
+		height: 40px;
+	}
 	&:hover {
 		width: 201px;
 		i {display: none;}
@@ -287,6 +471,10 @@
 		font-size: 19px;
 		font-weight: 400;
 		letter-spacing: -1.14px;
+		@include breakpoint("maxmedium") {
+			line-height: 40px;
+			font-size: 17px;
+		}
 	}
 	i {
 		position: absolute;

@@ -101,6 +101,10 @@ p {
 
 .minspr0 {
 	@include breakpoint("small") {
-	      padding-right: 0 !important;
+		padding-right: 0 !important;
 	}
+}
+
+.main-wrap {
+	// overflow: hidden;
 }

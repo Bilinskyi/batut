@@ -117,12 +117,19 @@ function onPlayerReady(event) {
 
 		$('.services__details_js-show').on('click', function(e) {
 			e.preventDefault(); 
-			$(this).next().addClass('hide-block_active');
+			var oldTxt = $(this).text();
+			if ( oldTxt !== 'Свернуть описание' ) {
+				$(this).text('Свернуть описание');
+			} else {
+				$(this).text('Узнать подробнее');
+			}
+			$(this).next().toggleClass('hide-block_active');
 		});
 
 		$('.js-close-hide').on('click', function(e) {
 			e.preventDefault(); 
 			$(this).closest('.hide-block').removeClass('hide-block_active');
+			$(this).closest('.services').find('.services__details').text('Узнать подробнее');
 		});
 
 		/* mobile check */
@@ -132,11 +139,12 @@ function onPlayerReady(event) {
 		}
 
 
-		// $('.js-hamburger').on('click', function(e) {
-		//  e.preventDefault(); 
-		//  $(this).toggleClass('is-active');
-		//  $('.menu').toggleClass('menu_active');
-		// });
+		$('.js-hamburger').on('click', function(e) {
+		 e.preventDefault(); 
+		 $(this).toggleClass('is-active');
+		 // $('.main-nav').toggleClass('main-nav_active');
+		 $('.wrap-top-line').toggleClass('wrap-top-line_active');
+		});
 
 
 	 //  $(".send").on('click', function (e) {
@@ -298,7 +306,7 @@ function onPlayerReady(event) {
 				}
 			},
 			{
-				breakpoint: 668,
+				breakpoint: 700,
 				settings: {
 					dots: false,
 					slidesToShow: 1,

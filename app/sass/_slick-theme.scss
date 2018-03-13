@@ -77,6 +77,12 @@ $slick-opacity-not-active: 0.25 !default;
 	border: none;
 	outline: none;
 	
+	@include breakpoint("maxsmall") {
+		width: 28px;
+		height: 32px;
+		top: 100% !important;
+		margin-top: 20px;
+	}
 	&:hover {
 		// background: darken(#065ea3, 1);
 	}
@@ -85,7 +91,9 @@ $slick-opacity-not-active: 0.25 !default;
 		color: transparent;
 	}
 	&:active {
-		transform: translate(0, 1px);
+		// transform: translateY(1px);
+		// margin-top: 1px;
+
 	}
 	&.slick-disabled:before {
 		opacity: $slick-opacity-not-active;
@@ -101,6 +109,15 @@ $slick-opacity-not-active: 0.25 !default;
 	margin-right: 20px;
 	top: 50px;
 
+	@include breakpoint("maxlarge") {
+		left: -15px;
+		right: auto;
+		margin-right: 0;
+	}
+	@include breakpoint("maxsmall") {
+		left: 50%;
+		transform: translateX(-129%);
+	}
 	[dir="rtl"] & {
 		left: auto;
 		right: -25px;
@@ -112,6 +129,16 @@ $slick-opacity-not-active: 0.25 !default;
 	left: 100%;
 	margin-left: 20px;
 	bottom: 50px;
+	@include breakpoint("maxlarge") {
+		margin-left: 0;
+		right: -15px;
+		left: auto;
+	}
+	@include breakpoint("maxsmall") {
+		right: 50%;
+		transform: translateX(129%);
+	}
+
 
 	[dir="rtl"] & {
 		left: -25px;

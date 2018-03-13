@@ -13,20 +13,20 @@ block main
 			.tabs-wrap
 				+b.tabs-caption
 					+tabc('tc1.jpg', 'скалодром')
-					+tabc('tc2.jpg', 'батутная<br>арена')
-					+tabc('tc3.jpg', 'батутная<br>дорожка')
-					+tabc('tc4.jpg', 'поролоновая<br>яма')
-					+tabc('tc5.jpg', 'доджбол<br>арена')
+					+tabc('tc2.jpg', 'батутная <br>арена')
+					+tabc('tc3.jpg', 'батутная <br>дорожка')
+					+tabc('tc4.jpg', 'поролоновая <br>яма')
+					+tabc('tc5.jpg', 'доджбол <br>арена')
 					+tabc('tc6.jpg', 'баскетбол')
-					+tabc('tc7.jpg', 'подушка<br>bag jump')
-					+tabc('tc8.jpg', 'ninja<br>курсы')
-					+tabc('tc9.jpg', 'профессиональные<br>батуты')
-					+tabc('tc10.jpg', 'акробатическая<br>стенка')
+					+tabc('tc7.jpg', 'подушка <br>bag jump')
+					+tabc('tc8.jpg', 'ninja <br>курсы')
+					+tabc('tc9.jpg', 'профессиональные <br>батуты')
+					+tabc('tc10.jpg', 'акробатическая <br>стенка')
 				.row.tabs-content-wrap
 					.tab-content
-						.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-xxs-12.minspr0
+						.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-xxs-12.minspr0
 							img.img-tab(src="../img/tab4.jpg", alt="")
-						.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-xxs-12
+						.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-xxs-12
 							+b.content-tab
 								+e.title Поролоновая <br>яма
 								+e.P.text.
@@ -47,6 +47,7 @@ block main
 	// end section-entertainment
 	// begin section-video
 	section.section-video
+		.icon-tr1
 		.container
 			.icon-tr3
 			.line-wrap
@@ -102,6 +103,8 @@ block main
 					'Корпоративные <br>праздники',
 					'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.'
 				)
+			.center
+				.show-more.js-more Показать еще
 	// end section-services
 	// begin section-tariff
 	section.section-tariff
@@ -110,28 +113,28 @@ block main
 				.title Наши тарифы
 				.subtitle ознакомьтесь с нашим прайсом и правилами центра
 			.row.tariff-wrap
-				.col-lg-3.col-md-3.col-sm-3.col-xs-3.col-xxs-12
+				.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-xxs-12
 					+b.tariff
 						+e.img-wrap
-							img(src="../img/price-1.jpg", alt="")
+							img(src="../img/price-1.png", alt="")
 							a.btn(href="#") КУПИТЬ БИЛЕТ
-				.col-lg-3.col-md-3.col-sm-3.col-xs-3.col-xxs-12
+				.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-xxs-12
 					+b.tariff
 						+e.img-wrap
-							img(src="../img/price-2.jpg", alt="")
+							img(src="../img/price-2.png", alt="")
 							a.btn(href="#") КУПИТЬ БИЛЕТ
-				.col-lg-3.col-md-3.col-sm-3.col-xs-3.col-xxs-12
+				.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-xxs-12
 					+b.tariff
 						+e.img-wrap
-							img(src="../img/price-3.jpg", alt="")
+							img(src="../img/price-3.png", alt="")
 							a.btn(href="#") КУПИТЬ БИЛЕТ
-				.col-lg-3.col-md-3.col-sm-3.col-xs-3.col-xxs-12
+				.col-lg-3.col-md-3.col-sm-3.col-xs-12.col-xxs-12
 					+b.tariff
 						+e.img-wrap
-							img(src="../img/price-4.jpg", alt="")
+							img(src="../img/price-4.png", alt="")
 							a.btn(href="#") КУПИТЬ БИЛЕТ
 			.row
-				.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-xxs-12
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-xxs-12
 					.lines-sm
 						p.p.
 							Мы стараемся учитывать интересы
@@ -142,12 +145,13 @@ block main
 						p.p.
 							Чтобы занятия на арене приносили только удовольствие, изучите
 						a.link(href="#" target="_blank") правила техники безопасности <br>и поведения на арене
-				.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-xxs-12
-					.lines-sm
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12.col-xxs-12
+					.lines-sm.lines-sm_br
 						p.p.
 							При первом посещении необходимо заполнить анкету джампера или согласие родителей / опекунов (для джамперов младше 18 лет). Для экономии времени, можно заполнить документы заранее 
 							и передать их администратору при первом посещении.
 						a.link(href="#" target="_blank") анкета джампера.pdf
+						br
 						a.link(href="#" target="_blank") согласие родителей.pdf
 	// end section-tariff
 	// begin section-map
@@ -160,12 +164,11 @@ block main
 				+e.text <i class="icon-clock"></i> <span>Пн - Пт 11:00 - 19:00 <br>Сб - Вс 10:00 - 23:00</span>
 				+e.text
 					i.icon-phone
-					+phone('8 (495) 784 76 77')
+					+phone('8 (495) 784 76 77')(data-call="позвонить" class="js-after")
 	// end section-map
 	include includes/footer.pug
 	//- include includes/form.pug
 	//- include includes/modals.pug
-	//- include includes/button-menu.pug
 
 	
 	
