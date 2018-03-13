@@ -6,25 +6,25 @@
 @import "_base.scss";
 @import "_sprite.scss";
 
-@import "_jquery.mCustomScrollbar.scss";
+// @import "_jquery.mCustomScrollbar.scss";
 
 
-@import "_play-button.scss";
-@import "_up-button.scss";
-@import "_popup.scss";
+// @import "_play-button.scss";
+// @import "_up-button.scss";
+// @import "_popup.scss";
 
 @import "_header.scss";
 @import "_footer.scss";
-@import "_form.scss";
+// @import "_form.scss";
 
-@import "_grid-custom.scss";
+// @import "_grid-custom.scss";
 
 @import "_slick.scss";
 @import "_slick-theme.scss";
 
 @import "_fancybox.scss";
-@import "_ripple-effect.scss";
-@import "_skew.scss";
+// @import "_ripple-effect.scss";
+// @import "_skew.scss";
 
 
 
@@ -46,7 +46,7 @@ img {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	padding-top: 98px;
+	padding-top: 97px;
 	padding-bottom: 108px;
 }
 
@@ -57,7 +57,7 @@ img {
 		content: '';
 		display: block;
 		position: absolute;
-		top: 29px;
+		top: 33px;
 		left: 0;
 		width: 46px;
 		height: 10px;
@@ -70,7 +70,7 @@ img {
 	font-family: $font1;
 	font-size: 64px;
 	font-weight: 900;
-
+line-height: 1;
 	letter-spacing: -1.28px;
 }
 .subtitle {
@@ -82,7 +82,7 @@ img {
 	letter-spacing: -0.48px;
 }
 .tabs-wrap {
-	margin-top: 70px;
+	margin-top: 67px;
 }
 .tabs-caption {
 	@include breakpoint("small") {
@@ -183,7 +183,7 @@ img {
 		letter-spacing: -0.52px;
 		line-height: 27.86px;
 
-		margin-top: 5px;
+		margin-top: 8px;
 		margin-bottom: 35px;
 		position: relative;
 		&:after {
@@ -195,7 +195,7 @@ img {
 			height: 24px;
 			right: 100%;
 			top: 100%;
-			margin-top: 5px;
+			margin-top: 6px;
 		}
 	}
 
@@ -220,7 +220,7 @@ img {
 
 
 .main-slider {
-	margin-top: 140px;
+	margin-top: 138px;
 }
 .main-slider-item {
 	@include breakpoint("small") {
@@ -268,9 +268,9 @@ img {
 
 .section-video {
 	background-color: #000;
-	padding: 0px 0 100px;
+	padding: 0px 0 99px;
 	.container {
-		padding-top: 78px;
+		padding-top: 74px;
 		position: relative;
 	}
 	.icon-tr3 {
@@ -278,7 +278,7 @@ img {
 		top: -20px;
 		right: 135px;
 		@include breakpoint("large") {
-		      right: 160px;
+			right: 160px;
 		}
 	}
 	.video-wrap {
@@ -294,17 +294,17 @@ img {
 
 .section-services {
 	background-color: #171717;
-	padding: 0px 0 86px;
+	padding: 0px 0 85px;
 	.container {
 		position: relative;
-		padding-top: 100px;
+		padding-top: 96px;
 	}
 	.icon-tr2 {
 		position: absolute;
 		right: 15px;
 		top: -50px;
 		@include breakpoint("large") {
-		      right: 40px;
+			right: 35px;
 		}
 	}
 }
@@ -324,7 +324,7 @@ img {
 .wrap-services {
 	margin-left: -3px;
 	margin-right: -3px;
-	margin-top: 70px;
+	margin-top: 73px;
 	&>* {
 		padding-left: 3px;
 		padding-right: 3px;
@@ -345,7 +345,8 @@ img {
 		line-height: 29.86px;
 
 		letter-spacing: -0.44px;
-		margin-top: 25px;
+		    margin-top: 23px;
+    padding-left: 23px;
 	}
 
 	&__details {
@@ -358,7 +359,7 @@ img {
 		font-size: 17px;
 		font-weight: 300;
 		letter-spacing: -0.34px;
-		margin-left: 67px;
+		margin-left: 90px;
 		position: relative;
 		&:after {
 			content: '';
@@ -384,7 +385,7 @@ img {
 	right: 0;
 	width: 100%;
 	background-color: #ffffff;
-	padding: 35px 20px;
+	padding: 34px 20px;
 	transform: translate(0, -100%);
 	opacity: 0;
 	visibility: hidden;
@@ -437,7 +438,7 @@ img {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
-	padding: 100px 0 140px;
+	padding: 96px 0 144px;
 	.p {
 		margin-bottom: 20px;
 	}
@@ -453,8 +454,8 @@ img {
 .tariff-wrap {
 	margin-left: -10px;
 	margin-right: -10px;
-	margin-bottom: 30px;
-	margin-top: 90px;
+	margin-bottom: 32px;
+	margin-top: 94px;
 	&>* {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -564,7 +565,7 @@ img {
 	background-color: #323333;
 	position: absolute;
 	z-index: 3;
-	right: 100px;
+	right: 109px;
 	top: -20px;
 	bottom: -20px;
 	width: 250px;

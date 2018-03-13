@@ -27,7 +27,7 @@
 	li {
 		// display: inline-block;
 		&:not(:last-child) {
-			margin-right: 10px;
+			margin-right: 11px;
 		}
 	}
 	a {
@@ -84,7 +84,7 @@
 
 }
 .logo-wrap {
-	padding: 10px 0;
+	padding: 11px 0 12px;
 }
 .logo {
 }
@@ -177,6 +177,7 @@
 	text-align: left;
 	letter-spacing: -0.69px;
 	margin-bottom: 15px;
+	    margin-top: 34px;
 }
 .icon-logotxt {
 	display: block;
@@ -197,6 +198,7 @@
 	background: url(../img/bg-btn.png) center top no-repeat;
 	background-size: contain;
 	padding: 50px 0;
+	    margin-top: 52px;
 }
 
 .button {
@@ -230,11 +232,11 @@
 .links-wrap {
 	position: absolute;
 	right: 15px;
-	bottom: -120px;
+	bottom: -128px;
 	text-align: right;
 	z-index: 99;
 	@include breakpoint("large") {
-		right: 40px;
+		right: 41px;
 	}
 }
 .link-box {
@@ -254,7 +256,7 @@
 		}
 	}
 	&:not(:last-child) {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 	&_th_1 {
 		background-color: #6fb8ed;

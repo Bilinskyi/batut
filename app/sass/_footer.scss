@@ -1,7 +1,7 @@
 .footer {
 	background-color: #171717;
 	padding: 0px 0 0px;
-	.container {
+	&>.container {
 		position: relative;
 		padding-top: 30px;
 	}
