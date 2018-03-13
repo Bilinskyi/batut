@@ -140,8 +140,8 @@ function onPlayerReady(event) {
 
 
 		$('.js-hamburger').on('click', function(e) {
-		 e.preventDefault(); 
-		 $(this).toggleClass('is-active');
+			e.preventDefault(); 
+			$(this).toggleClass('is-active');
 		 // $('.main-nav').toggleClass('main-nav_active');
 		 $('.wrap-top-line').toggleClass('wrap-top-line_active');
 		});

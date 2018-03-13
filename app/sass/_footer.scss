@@ -2,8 +2,8 @@
 	background-color: #171717;
 	padding: 0px 0 0px;
 	@include breakpoint("maxsmall") {
-	      background-color: #323333;
-	      padding-bottom: 27px;
+		background-color: #323333;
+		padding-bottom: 27px;
 	}
 	.social-link {
 		display: block;
@@ -13,14 +13,14 @@
 			display: inline-block;
 		}
 		@include breakpoint("small") {
-		      display: none;
+			display: none;
 		}
 	}
 	&>.container {
 		position: relative;
 		padding-top: 30px;
 		@include breakpoint("maxsmall") {
-		      padding-top: 0;
+			padding-top: 0;
 		}
 	}
 	.icon-tr5 {
@@ -48,13 +48,13 @@
 		margin-right: 65px;
 	}
 	@include breakpoint("maxsmall") {
-	      &:not(:first-child) {
-	      	display: none !important;
-	      }
-	      &:first-child {
-	      	width: 100%;
-	      	margin-right: 0;
-	      }
+		&:not(:first-child) {
+			display: none !important;
+		}
+		&:first-child {
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 }
 .logo-foot {
@@ -62,10 +62,10 @@
 		max-width: 200px;
 	}
 	@include breakpoint("maxsmall") {
-	      max-width: 100%;
-	      display: block;
-	      margin-left: auto;
-	      margin-right: auto;
+		max-width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .nav-head {
@@ -107,7 +107,7 @@
 		margin-top: 40px;
 	}
 	@include breakpoint("maxsmall") {
-	      display: none;
+		display: none;
 	}
 }
 .copy {

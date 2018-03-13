@@ -20,7 +20,7 @@
 	margin-top: 18px;
 	margin-left: 55px;
 	@include breakpoint("maxsmall") {
-	      display: block;
+		display: block;
 	}
 	img {
 		display: block;
@@ -37,6 +37,9 @@
 	right: 0;
 	z-index: 100;
 	@include breakpoint("maxsmall") {
+		background-image: url(../img/menu-bg.png);
+		background-position: 140% center;
+		background-repeat: no-repeat;
 		top: 106px;
 		transform: translate(-100%, 0%);
 		transition: transform .3s ease;
@@ -54,6 +57,11 @@
 	justify-content: space-between;
 	@include breakpoint("maxsmall") {
 		padding: 0;
+	}
+	.social-link {
+		@include breakpoint("maxsmall") {
+			display: none;
+		}
 	}
 }
 .social-link {
@@ -128,19 +136,15 @@
 	@include breakpoint("maxsmall") {
 		margin-top: 0;
 	}
-	.social-link {
-		@include breakpoint("maxsmall") {
-		      display: none;
-		}
-	}
+
 	.icon-tr2 {
 		position: absolute;
 		bottom: -120px;
 		left: -40px;
 		@include breakpoint("maxsmall") {
-		      left: auto;
-		      right: 60px;
-		      bottom: -150px;
+			left: auto;
+			right: 60px;
+			bottom: -150px;
 		}
 	}
 	.icon-tr1 {
@@ -240,9 +244,9 @@
 			padding-bottom: 60px;
 		}
 		@include breakpoint("maxsmall") {
-		      padding-left: 10px;
-		      padding-right: 10px;
-		      padding-bottom: 130px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 139px;
 		}
 	}
 }
@@ -257,8 +261,8 @@
 		margin-top: 100px;
 	}
 	@include breakpoint("maxsmall") {
-	      margin-top: 90px;
-	      display: block;
+		margin-top: 93px;
+		display: block;
 	}
 	&:before {
 		content: '';
@@ -287,8 +291,8 @@
 		margin-top: -50px;
 	}
 	@include breakpoint("maxsmall") {
-	      display: none;
-	      margin-top: 0;
+		display: none;
+		margin-top: 0;
 	}
 	img {
 		@include breakpoint("maxmedium") {
@@ -311,8 +315,9 @@
 	}
 	@include breakpoint("maxsmall") {
 		margin-top: 0;
-	      font-size: 33px;
-letter-spacing: -0.69px;
+		font-size: 33px;
+		letter-spacing: -0.69px;
+		margin-bottom: 7px;
 	}
 }
 .icon-logotxt {
@@ -320,7 +325,7 @@ letter-spacing: -0.69px;
 	position: relative;
 	left: 5px;
 	@include breakpoint("maxsmall") {
-	      left: 0;
+		left: 0;
 	}
 }
 .bottom-title {
@@ -337,8 +342,9 @@ letter-spacing: -0.69px;
 		font-size: 35px;
 	}
 	@include breakpoint("maxsmall") {
-	      font-size: 30px;
-letter-spacing: -3.8px;
+		font-size: 30px;
+		letter-spacing: -3.8px;
+		    margin-top: 20px;
 	}
 }
 .btn-wrap {
@@ -354,8 +360,8 @@ letter-spacing: -3.8px;
 		margin-top: 10px;
 	}
 	@include breakpoint("maxsmall") {
-	      padding: 46px 0;
-	      margin-top: 60px;
+		padding: 46px 0;
+		margin-top: 64px;
 	}
 }
 
@@ -395,8 +401,8 @@ letter-spacing: -3.8px;
 		padding: 14px 25px;
 	}
 	@include breakpoint("maxsmall") {
-	      font-size: 18px;
-	      padding: 17px 42px;
+		font-size: 18px;
+		padding: 17px 42px;
 	}
 }
 
@@ -416,7 +422,7 @@ letter-spacing: -3.8px;
 		right: 41px;
 	}
 	@include breakpoint("maxsmall") {
-	      display: none;
+		display: none;
 	}
 }
 .link-box {
