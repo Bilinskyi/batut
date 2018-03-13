@@ -1,6 +1,16 @@
 .footer {
 	background-color: #171717;
-	padding: 30px 0 0px;
+	padding: 0px 0 0px;
+	.container {
+		position: relative;
+		padding-top: 30px;
+	}
+	.icon-tr5 {
+		position: absolute;
+		right: -40px;
+		top: -60px;
+		z-index: 3;
+	}
 }
 .footer-flex {
 	display: flex;

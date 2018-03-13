@@ -268,7 +268,22 @@ img {
 
 .section-video {
 	background-color: #000;
-	padding: 78px 0 100px;
+	padding: 0px 0 100px;
+	.container {
+		padding-top: 78px;
+		position: relative;
+	}
+	.icon-tr3 {
+		position: absolute;
+		top: -20px;
+		right: 135px;
+		@include breakpoint("large") {
+		      right: 160px;
+		}
+	}
+	.video-wrap {
+		margin-top: 70px;
+	}
 }
 
 
@@ -279,9 +294,18 @@ img {
 
 .section-services {
 	background-color: #171717;
-	padding: 100px 0 86px;
+	padding: 0px 0 86px;
 	.container {
 		position: relative;
+		padding-top: 100px;
+	}
+	.icon-tr2 {
+		position: absolute;
+		right: 15px;
+		top: -50px;
+		@include breakpoint("large") {
+		      right: 40px;
+		}
 	}
 }
 
@@ -512,6 +536,12 @@ img {
 	.container {
 		height: 100%;
 		position: relative;
+	}
+	.icon-tr4 {
+		z-index: 4;
+		position: absolute;
+		left: -10px;
+		top: -70px;
 	}
 }
 

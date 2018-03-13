@@ -66,6 +66,11 @@
 }
 .header {
 	margin-top: 40px;
+	.icon-tr2 {
+		position: absolute;
+		bottom: -120px;
+		left: -40px;
+	}
 }
 .wrap-header-top {
 	background-color: #6fb8ed;
@@ -130,7 +135,10 @@
 	background: url(../img/main-image.jpg) center top no-repeat;
 	background-size: cover;
 	text-align: center;
-	padding-bottom: 90px;
+	.container {
+		padding-bottom: 90px;
+		position: relative;	
+	}
 }
 .wrap-bg {
 	display: inline-block;
@@ -157,11 +165,7 @@
 	right: -50px;
 	top: -75px;
 }
-.icon-tr2 {
-	position: absolute;
-	bottom: -120px;
-	left: -40px;
-}
+
 .main-logo {
 	margin-top: -68px;
 }
@@ -215,4 +219,85 @@
 		font-size: 16px;
 		padding: 15px 27px;
 	}
+}
+
+
+
+
+
+
+
+.links-wrap {
+	position: absolute;
+	right: 15px;
+	bottom: -120px;
+	text-align: right;
+	z-index: 99;
+	@include breakpoint("large") {
+		right: 40px;
+	}
+}
+.link-box {
+	width: 61px;
+	height: 57px;
+	position: relative;
+	cursor: pointer;
+	float: right;
+	clear: both;
+	transition: width .2s ease;
+	overflow: hidden;
+	&:hover {
+		width: 201px;
+		i {display: none;}
+		.link-box__hide {
+			display: block;
+		}
+	}
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&_th_1 {
+		background-color: #6fb8ed;
+		box-shadow: 0 3px 0 0 #3372a0;
+	}
+
+	&_th_2 {
+		background-color: #c53bb4;
+		box-shadow: 0 3px 0 0 #64185b;
+	}
+
+	&_th_3 {
+		background-color: #bbfa60;
+		box-shadow: 0 3px 0 0 #4f711e;
+		.link-box__hide {
+			color: #000000;
+		}
+	}
+
+	&__hide {
+		white-space: nowrap;
+		display: none;
+		text-align: center;
+		line-height: 57px;
+
+		color: #ffffff;
+		font-family: $font2;
+		font-size: 19px;
+		font-weight: 400;
+		letter-spacing: -1.14px;
+	}
+	i {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.icon-question {
+}
+.icon-info {
+}
+.icon-cart {
 }
