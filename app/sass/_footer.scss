@@ -9,6 +9,9 @@
 		display: block;
 		text-align: center;
 		margin-bottom: 50px;
+		@include breakpoint("mobileonly") {
+			margin-bottom: 25px;
+		}
 		li {
 			display: inline-block;
 		}

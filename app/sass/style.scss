@@ -58,6 +58,9 @@ img {
 	@include breakpoint("maxsmall") {
 		background-color: #000;
 	}
+	@include breakpoint("mobileonly") {
+		padding-top: 30px;
+	}
 }
 
 .line-wrap {
@@ -65,6 +68,9 @@ img {
 	padding-left: 77px;
 	@include breakpoint("maxsmall") {
 		padding-left: 62px;
+	}
+	@include breakpoint("mobileonly") {
+		padding-left: 40px;
 	}
 	&:after {
 		content: '';
@@ -79,6 +85,11 @@ img {
 			width: 38px;
 			height: 8px;
 			top: 27px;
+		}
+		@include breakpoint("mobileonly") {
+			width: 25px;
+			height: 5px;
+			top: 15px;
 		}
 	}
 }
@@ -99,6 +110,9 @@ img {
 	@include breakpoint("maxsmall") {
 		font-size: 52px;
 	}
+	@include breakpoint("mobileonly") {
+		font-size: 35px;
+	}
 }
 .subtitle {
 	color: #ffffff;
@@ -113,11 +127,17 @@ img {
 	@include breakpoint("maxsmall") {
 		font-size: 20px;
 	}
+	@include breakpoint("mobileonly") {
+		font-size: 14px;
+	}
 }
 .tabs-wrap {
 	margin-top: 67px;
 	@include breakpoint("maxmedium") {
 		margin-top: 53px;
+	}
+	@include breakpoint("mobileonly") {
+		margin-top: 40px;
 	}
 }
 .tabs-caption {
@@ -184,7 +204,9 @@ img {
 			vertical-align: top;
 			margin: 0 10px 8px;
 		}
-
+		@include breakpoint("mobileonly") {
+			margin-bottom: 6px;
+		}
 	}
 
 	&__txt {
@@ -209,6 +231,9 @@ img {
 				border-bottom-color: #bbfa60;
 			}
 		}
+		@include breakpoint("mobileonly") {
+			font-size: 17px;
+		}
 	}
 }
 
@@ -228,6 +253,9 @@ img {
 	}
 	@include breakpoint("maxsmall") {
 		margin-top: 72px;
+	}
+	@include breakpoint("mobileonly") {
+		margin-top: 40px;
 	}
 }
 .tab-content {
@@ -285,6 +313,11 @@ img {
 			font-size: 36px;
 			padding-bottom: 53px;
 		}
+		@include breakpoint("mobileonly") {
+			font-size: 24px;
+			padding-bottom: 33px;
+			margin-bottom: 10px;
+		}
 		&:after {
 			content: '';
 			display: block;
@@ -308,6 +341,12 @@ img {
 				top: auto;
 				bottom: 0;
 			}
+			@include breakpoint("mobileonly") {
+				background: url(../img/wave-xs.png) center top no-repeat;
+				width: 55px;
+				height: 21px;
+				
+			}
 		}
 	}
 
@@ -328,6 +367,10 @@ img {
 		@include breakpoint("maxsmall") {
 			font-size: 23px;
 			line-height: 37.87px;
+		}
+		@include breakpoint("mobileonly") {
+			font-size: 15px;
+			line-height: 23px;
 		}
 	}
 }
@@ -351,6 +394,9 @@ img {
 	}
 	@include breakpoint("maxsmall") {
 		margin-top: 80px;
+	}
+	@include breakpoint("mobileonly") {
+		margin-top: 70px;
 	}
 }
 .main-slider-item {
@@ -423,6 +469,9 @@ img {
 	@include breakpoint("maxsmall") {
 		padding-bottom: 85px;
 	}
+	@include breakpoint("mobileonly") {
+		padding-bottom: 65px;
+	}
 	.container {
 		padding-top: 74px;
 		position: relative;
@@ -431,6 +480,9 @@ img {
 		}
 		@include breakpoint("maxsmall") {
 			padding-top: 65px;
+		}
+		@include breakpoint("mobileonly") {
+			padding-top: 45px;
 		}
 	}
 	.icon-tr1 {
@@ -441,6 +493,9 @@ img {
 		z-index: 4;
 		@include breakpoint("maxsmall") {
 			display: block;
+		}
+		@include breakpoint("mobileonly") {
+			bottom: -35px;
 		}
 	}
 	.icon-tr3 {
@@ -464,6 +519,9 @@ img {
 			@include breakpoint("maxmedium") {
 				height: 300px;
 			}
+			@include breakpoint("mobileonly") {
+				height: 200px;
+			}
 		}
 		@include breakpoint("maxmedium") {
 			margin-top: 50px;
@@ -472,6 +530,9 @@ img {
 			max-width: 600px;
 			margin-left: auto;
 			margin-right: auto;
+		}
+		@include breakpoint("mobileonly") {
+			margin-top: 30px;
 		}
 	}
 }
@@ -501,6 +562,9 @@ img {
 		padding-top: 96px;
 		@include breakpoint("maxmedium") {
 			padding-top: 50px;
+		}
+		@include breakpoint("mobileonly") {
+			padding-top: 0;
 		}
 	}
 	.icon-tr2 {
@@ -536,6 +600,9 @@ img {
 	@include breakpoint("maxmedium") {
 		margin-top: 50px;
 	}
+	@include breakpoint("mobileonly") {
+		margin-top: 40px;
+	}
 	&>* {
 		padding-left: 3px;
 		padding-right: 3px;
@@ -552,6 +619,9 @@ img {
 				display: block;
 			}
 		}
+		@include breakpoint("mobileonly") {
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -562,7 +632,10 @@ img {
 	letter-spacing: -0.34px;
 	border-bottom: 1px solid #bbfa60;
 	@include breakpoint("small") {
-	      display: none;
+		display: none;
+	}
+	@include breakpoint("mobileonly") {
+		font-size: 14px;
 	}
 }
 
@@ -597,6 +670,10 @@ img {
 			font-size: 26px;
 			margin-top: 25px;
 		}
+		@include breakpoint("mobileonly") {
+			font-size: 18px;
+			margin-top: 20px;
+		}
 	}
 
 	&__details {
@@ -617,6 +694,9 @@ img {
 		}
 		@include breakpoint("maxsmall") {
 			font-size: 20px;
+			margin-left: 68px;
+			font-size: 14px;
+			margin-top: 8px;
 		}
 		&:after {
 			content: '';
@@ -633,6 +713,12 @@ img {
 				background: url(../img/wave.png) center top no-repeat;
 				width: 65px;
 				height: 24px;
+			}
+			@include breakpoint("mobileonly") {
+				background: url(../img/wave-xxs.png) center top no-repeat;
+				width: 46px;
+				height: 16px;
+				
 			}
 		}
 
@@ -659,7 +745,10 @@ img {
 		background-color: transparent;
 		padding-left: 0;
 		padding-right: 0;
-		    padding-top: 50px;
+		padding-top: 50px;
+	}
+	@include breakpoint("mobileonly") {
+		padding-top: 25px;
 	}
 	&_active {
 		opacity: 1;
@@ -708,6 +797,10 @@ img {
 			font-size: 23px;
 			line-height: 30.87px;
 		}
+		@include breakpoint("mobileonly") {
+			font-size: 15px;
+			line-height: 23px;
+		}
 	}
 	.button {
 		margin-top: 28px;
@@ -746,7 +839,10 @@ img {
 	}
 	@include breakpoint("maxsmall") {
 		padding-bottom: 90px;
-		    padding-top: 36px;
+		padding-top: 36px;
+	}
+	@include breakpoint("mobileonly") {
+		padding-bottom: 60px;
 	}
 	.p {
 		margin-bottom: 20px;
@@ -805,6 +901,10 @@ img {
 	@include breakpoint("maxsmall") {
 		margin-bottom: 50px;
 	}
+	@include breakpoint("mobileonly") {
+		max-width: 265px;
+		margin-bottom: 30px;
+	}
 	&__img-wrap {
 		position: relative;
 		.btn {
@@ -830,6 +930,13 @@ img {
 				font-size: 24px;
 				padding-top: 16px;
 				padding-bottom: 16px;
+			}
+			@include breakpoint("mobileonly") {
+				bottom: 28px;
+				font-size: 16px;
+				width: 162px;
+				padding-bottom: 10px;
+				padding-top: 10px;
 			}
 		}
 	}
@@ -877,7 +984,16 @@ img {
 			display: none;
 		}
 	}
+	@include breakpoint("mobileonly") {
+		padding-top: 23px;
+		margin-top: 23px;
+		background: url(../img/wave-xxs.png) left top no-repeat;
+	}
 	&_br {
+		.link {
+			color: #bbfa60;
+			border-bottom: 1px solid #bbfa60;
+		}
 		.p {
 			display: block;
 		}
@@ -903,6 +1019,10 @@ img {
 		font-size: 26px;
 		line-height: 31.57px;
 	}
+	@include breakpoint("mobileonly") {
+		font-size: 17px;
+		line-height: 21px;
+	}
 }
 
 .link {
@@ -923,6 +1043,11 @@ img {
 	}
 	@include breakpoint("maxsmall") {
 		font-size: 26px;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+	@include breakpoint("mobileonly") {
+		font-size: 17px;
 	}
 }
 
@@ -938,6 +1063,9 @@ img {
 	@include breakpoint("maxsmall") {
 		padding-top: 460px;
 		height: auto;
+	}
+	@include breakpoint("mobileonly") {
+		padding-top: 310px;
 	}
 	.container {
 		height: 100%;
@@ -970,6 +1098,9 @@ img {
 		height: 460px;
 		top: 0;
 		bottom: auto;
+	}
+	@include breakpoint("mobileonly") {
+		height: 310px;
 	}
 }
 
@@ -1043,6 +1174,11 @@ img {
 		padding-top: 45px;
 		padding-bottom: 70px;
 	}
+	@include breakpoint("mobileonly") {
+		padding-top: 29px;
+		padding-bottom: 55px;
+		padding-left: 10px;
+	}
 	&__text {
 		display: inline-block;
 		position: relative;
@@ -1068,6 +1204,11 @@ img {
 			padding-left: 90px;
 			font-size: 24px;
 			line-height: 31.57px;
+		}
+		@include breakpoint("mobileonly") {
+			font-size: 16px;
+			line-height: 21px;
+			padding-left: 70px;
 		}
 		span {
 			position: relative;
@@ -1101,6 +1242,9 @@ img {
 		@include breakpoint("maxsmall") {
 			font-size: 29px;
 		}
+		@include breakpoint("mobileonly") {
+			font-size: 19px;
+		}
 	}
 }
 
@@ -1117,7 +1261,10 @@ img {
 		color: #bbfa60;
 		border-bottom: 1px solid #bbfa60;
 		@include breakpoint("small") {
-		      display: none;
+			display: none;
+		}
+		@include breakpoint("mobileonly") {
+			font-size: 18px;
 		}
 	}
 }
